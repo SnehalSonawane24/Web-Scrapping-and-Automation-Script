@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Business Development Manager",
+        "department": "",
+        "level": "Mid Level",
+        "location": "Mumbai",
+        "summary": "Strategic professional to identify, develop, and manage new business opportunities, build partnerships, and drive revenue growth through strategic planning and stakeholder engagement.",
+        "link": "https://valuenable.in/open-positions/business-development-manager",
+        "status": "Open"
+    },
+    {
+        "title": "Full Stack Developer (Python Backend + React Frontend)",
+        "department": "Engineering",
+        "level": "Mid Level",
+        "location": "Mumbai",
+        "summary": "Build scalable web applications using Python backend and modern frontend frameworks like React.",
+        "link": "https://valuenable.in/open-positions/full-stack-developer-python-backend-react-frontend",
+        "status": "Open"
+    },
+    {
+        "title": "Senior Full Stack Developer",
+        "department": "Engineering",
+        "level": "Senior Level",
+        "location": "Hybrid",
+        "summary": "Build scalable, end-to-end product features across frontend and backend systems powering real fintech solutions.",
+        "link": "https://valuenable.in/open-positions/senior-full-stack-developer-1",
+        "status": "Open"
+    },
+    {
+        "title": "Product Manager / Project Manager",
+        "department": "Product",
+        "level": "Senior Level",
+        "location": "Mumbai",
+        "summary": "Lead product execution, manage cross-functional teams, and ensure timely delivery of high-quality solutions.",
+        "link": "https://valuenable.in/open-positions/product-manager-project-manager",
+        "status": "Open"
+    },
+    {
+        "title": "QA Automation Tester",
+        "department": "Engineering",
+        "level": "Mid Level",
+        "location": "Hybrid",
+        "summary": "Build and scale automated testing systems to ensure high-quality, reliable product delivery.",
+        "link": "https://valuenable.in/open-positions/qa-automation-tester",
+        "status": "Open"
+    },
+    {
+        "title": "Business Head – Wealth Management Partnerships",
+        "department": "Sales",
+        "level": "Senior Level",
+        "location": "Mumbai",
+        "summary": "Lead wealth partnerships and drive revenue growth across HNI, family office, and institutional segments.",
+        "link": "https://valuenable.in/open-positions/market-aligned-compensation",
+        "status": "Open"
+    },
+    {
+        "title": "Area Sales Manager – LAS Product",
+        "department": "Sales",
+        "level": "Senior Level",
+        "location": "Mumbai",
+        "summary": "Drive growth and partnerships for loan-against-securities products across HNI and institutional segments.",
+        "link": "https://valuenable.in/open-positions/senior-full-stack-developer",
+        "status": "Open"
+    },
+    {
+        "title": "AVP – Insurer Relationships",
+        "department": "Sales",
+        "level": "Senior Level",
+        "location": "Mumbai",
+        "summary": "Build and manage strategic relationships with leading insurers while driving business growth and partnerships.",
+        "link": "https://valuenable.in/open-positions/actuarial-specialist",
+        "status": "Open"
+    }
+]

@@ -1,0 +1,29 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv/
+
+# Distribution & build
+build/
+develop-eggs/
+dist/
+*.egg-info/
+*.egg
+
+# Testing & Coverage
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+coverage.xml
+.hypothesis/
+pytestdebug.log
+
+# IDEs & OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
