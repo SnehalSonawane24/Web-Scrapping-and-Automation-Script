@@ -4,47 +4,56 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
+        stage('Check Python') {
             steps {
-                checkout scm
+                bat 'where python'
+                bat '"C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" --version'
             }
         }
 
         stage('Install Dependencies') {
             steps {
-                bat 'py -m pip install --upgrade pip'
-                bat 'py -m pip install -r requirements.txt'
+                bat '"C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" -m pip install --upgrade pip'
+                bat '"C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" -m pip install -r requirements.txt'
             }
         }
 
         stage('Install Playwright Browsers') {
             steps {
-                bat 'py -m playwright install'
+                bat '"C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" -m playwright install'
             }
         }
 
         stage('Run Web Scraper') {
             steps {
-                bat 'py scrapers\\scrape.py'
+                bat '"C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" scrapers\\scrape.py'
             }
         }
 
-        stage('Run Login Automation') {
+        stage('Run UI Automation') {
             steps {
-                bat 'py tests\\test_contact_form.py'
+                bat '"C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" tests\\test_contact_form.py'
             }
         }
-
     }
 
     post {
 
         always {
 
-            archiveArtifacts artifacts: 'output/*', allowEmptyArchive: true
+            archiveArtifacts artifacts: 'output/*.csv', allowEmptyArchive: true
 
-            archiveArtifacts artifacts: 'screenshots/*', allowEmptyArchive: true
+            archiveArtifacts artifacts: 'output/*.json', allowEmptyArchive: true
 
+            archiveArtifacts artifacts: 'screenshots/*.png', allowEmptyArchive: true
+        }
+
+        success {
+            echo 'Build completed successfully.'
+        }
+
+        failure {
+            echo 'Build failed. Check the console output and archived screenshots.'
         }
     }
 }
